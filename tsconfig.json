@@ -1,14 +1,24 @@
 {
   "compilerOptions": {
-    "baseUrl": "packages",
+    "target": "es5",
+    "lib": ["dom", "es2015", "es2017", "esnext.asynciterable"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
     "declaration": true,
     "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
     "esModuleInterop": true,
-    "importHelpers": true,
-    "noUnusedLocals": false,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "paths": { "uniforms": ["uniforms/src"], "uniforms-*": ["uniforms-*/src"] },
-    "target": "ES6"
-  }
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
