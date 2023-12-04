@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": "packages",
-    "composite": true,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
     "importHelpers": true,
+    "noUnusedLocals": false,
     "jsx": "react",
     "moduleResolution": "node",
     "paths": { "uniforms": ["uniforms/src"], "uniforms-*": ["uniforms-*/src"] },
-    "strict": true,
     "target": "ES6"
   }
 }

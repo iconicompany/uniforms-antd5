@@ -32,11 +32,14 @@ export function Quick<Base extends typeof BaseForm>(Base: Base) {
       const AutoField = this.getAutoField();
 
       if (!props.children) {
+
         props.children = this.getContextSchema()
           .getSubfields()
           .map(key => <AutoField key={key} name={key} />)
           .concat([
+            // @ts-ignore
             <ErrorsField key="$ErrorsField" />,
+            // @ts-ignore
             <SubmitField key="$SubmitField" />,
           ]);
       }

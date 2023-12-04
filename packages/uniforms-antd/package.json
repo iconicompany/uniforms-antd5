@@ -1,5 +1,5 @@
 {
-  "name": "uniforms-antd",
+  "name": "uniforms-antd5",
   "version": "4.0.0-alpha.5",
   "license": "MIT",
   "main": "./cjs/index.js",
@@ -9,12 +9,11 @@
     "esm/wrapField.js",
     "src/wrapField.tsx"
   ],
-  "description": "Ant Design UI components for uniforms.",
-  "repository": "https://github.com/vazco/uniforms/tree/master/packages/uniforms-antd",
-  "bugs": "https://github.com/vazco/uniforms/issues",
-  "funding": "https://github.com/vazco/uniforms?sponsor=1",
+  "description": "Ant Design v.5 UI components for uniforms.",
+  "repository": "https://github.com/pivotdude/uniforms-antd5/tree/master/packages/uniforms-antd",
+  "bugs": "https://github.com/pivotdude/uniforms-antd5//issues",
   "keywords": [
-    "antd",
+    "antd", 
     "form",
     "forms",
     "meteor",
@@ -32,15 +31,15 @@
     "src/*.tsx"
   ],
   "peerDependencies": {
-    "@ant-design/icons": "^4.0.0",
-    "antd": "^4.0.0",
-    "react": "^18.0.0 || ^17.0.0 || ^16.8.0"
+    "@ant-design/icons": "^5.2.6",
+    "antd": "^5.12.1",
+    "react": "^18.2.0"
   },
   "dependencies": {
-    "invariant": "^2.0.0",
-    "lodash": "^4.0.0",
-    "tslib": "^2.2.0",
+    "invariant": "^2.2.4",
+    "lodash": "^4.17.21",
+    "tslib": "^2.6.2",
     "uniforms": "^4.0.0-alpha.5",
-    "warning": "^4.0.0"
+    "warning": "^4.0.3"
   }
 }
